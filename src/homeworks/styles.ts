@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-import WeatherImage from "../assets/weather.png"
+import {WeatherImage} from 'assets'
 
 export const Homework29Wrapper = styled.div`
 display: flex;

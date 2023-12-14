@@ -1,12 +1,14 @@
-import GlobalStyles from "./styles/GlobalStyles";
+import GlobalStyles from "styles/GlobalStyles";
 
-import Homework29 from "./homeworks/Homework29";
+// import Homework29 from "homeworks/Homework29";
+import Lesson30 from "components/lessons/Lesson30";
 
 function App() {
-  return <div>
+  return <>
     <GlobalStyles />
-    <Homework29 />
-    </div>
+    {/* <Homework29 /> */}
+    <Lesson30 />
+    </>
 }
 
 export default App;
