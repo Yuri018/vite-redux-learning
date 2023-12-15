@@ -21,7 +21,7 @@ function Counter() {
     setCounter((prevValue: number) => prevValue / 2)
   }
 
-  const roundedValue = Math.round(counter * 100) / 100
+  const roundedValue = counter.toFixed(2)
 
   return (
     <CounterWrapper>
