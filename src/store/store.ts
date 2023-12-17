@@ -2,9 +2,13 @@ import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
 
 import { counterReducer } from "./redux/counter/counterSlise"
 
+import {feedbackReducer} from './redux/feedback/feedbackSlise'
+
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    // counter: counterReducer,
+    feedback: feedbackReducer,
+
   },
 })
 
