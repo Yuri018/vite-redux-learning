@@ -1,3 +1,3 @@
-import Lesson30 from "components/lessons/Lesson30";
+import Counter from "./Counter";
 
-export default Lesson30;
+export default Counter;
