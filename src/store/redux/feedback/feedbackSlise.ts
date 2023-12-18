@@ -18,8 +18,7 @@ const feedbackSlise = createSlice({
       state.diseLikeCount = state.diseLikeCount + 1
     },
     resetResults: (state: FeedbackInitialState) => {
-        state.likeCount = 0,
-        state.diseLikeCount = 0
+        return feedbackInitialState
     }
   },
 })
