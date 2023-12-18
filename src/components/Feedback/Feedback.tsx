@@ -4,7 +4,7 @@ import { feedbackState } from "store/redux/feedback/selectors"
 
 import { LikeIcon, DislikeIcon } from "assets"
 
-import { FeedbackWrapper, Count } from "./styles"
+import { FeedbackWrapper, Count, imageContainer } from "./styles"
 import Button from "components/Button"
 
 function Feedback() {
@@ -24,9 +24,9 @@ function Feedback() {
   return (
     <FeedbackWrapper>
       <img src={LikeIcon} alt="like" onClick={like} />
-      <Count>{counter.likeCount > 0 && counter.likeCount}</Count>
+      <Count>{counter.likeCount}</Count>
       <img src={DislikeIcon} alt="diseLike" onClick={diseLike} />
-      <Count>{counter.diseLikeCount > 0 && counter.diseLikeCount}</Count>
+      <Count>{counter.diseLikeCount}</Count>
       <Button name="Reset Results" type="button" onClick={reset} />
     </FeedbackWrapper>
   )

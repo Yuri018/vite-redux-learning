@@ -10,7 +10,6 @@ const feedbackInitialState: FeedbackInitialState = {
 const feedbackSlise = createSlice({
   name: "FEEDBACK",
   initialState: feedbackInitialState,
-
   reducers: {
     like: (state: FeedbackInitialState) => {
       state.likeCount = state.likeCount + 1

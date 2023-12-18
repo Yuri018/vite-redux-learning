@@ -17,3 +17,7 @@ export const Count = styled.div`
   font-weight: bold;
   color: ${colors.white};
 `
+export const imageContainer = styled.div`
+width: 50px;
+height: 50px;
+`;
