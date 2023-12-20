@@ -3,6 +3,7 @@ import Layout from "components/Layout"
 import { Route, Routes } from "react-router-dom"
 import TodoList from "components/TodoList"
 import JokeGenerator from "components/JokeGenerator"
+import CatFacts from "components/CatFacts/CatFacts"
 
 import Home from "pages/Home"
 import Users from "pages/Users"
@@ -17,7 +18,8 @@ function App() {
       <GlobalStyles />
 
       {/* <TodoList /> */}
-      <JokeGenerator />
+      {/* <JokeGenerator /> */}
+      <CatFacts />
 
       {/* <Layout>
         <Routes>
