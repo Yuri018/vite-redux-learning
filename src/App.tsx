@@ -1,6 +1,7 @@
 import GlobalStyles from "styles/GlobalStyles"
 import Layout from "components/Layout"
 import { Route, Routes } from "react-router-dom"
+import TodoList from "components/TodoList"
 
 import Home from "pages/Home"
 import Users from "pages/Users"
@@ -14,13 +15,15 @@ function App() {
     <>
       <GlobalStyles />
 
-      <Layout>
+      <TodoList />
+
+      {/* <Layout>
         <Routes>
           <Route path="/" element ={<Home />} />
           <Route path="/users" element={<Users />} />
           <Route path="*" element="Page is not found" />
         </Routes>
-      </Layout>
+      </Layout> */}
 
       {/* <Homework29 /> */}
       {/* <Homework31 /> */}

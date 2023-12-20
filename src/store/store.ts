@@ -6,11 +6,14 @@ import {feedbackReducer} from './redux/feedback/feedbackSlise'
 
 import{usersReducers} from './redux/Users/usersSlise'
 
+import{todoListReducers} from './redux/todoList/todoListSlice'
+
 export const store = configureStore({
   reducer: {
-    // counter: counterReducer,
+    counter: counterReducer,
     feedback: feedbackReducer,
     users: usersReducers,
+    todolist: todoListReducers,
 
   },
 })
