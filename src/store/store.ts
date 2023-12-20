@@ -8,12 +8,15 @@ import{usersReducers} from './redux/Users/usersSlise'
 
 import{todoListReducers} from './redux/todoList/todoListSlice'
 
+import { jokeGeneratorReducers } from "./redux/jokeGenerator/jokeGeneratorSlice"
+
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
     feedback: feedbackReducer,
     users: usersReducers,
     todolist: todoListReducers,
+    jokeGenerator: jokeGeneratorReducers
 
   },
 })

@@ -2,6 +2,7 @@ import GlobalStyles from "styles/GlobalStyles"
 import Layout from "components/Layout"
 import { Route, Routes } from "react-router-dom"
 import TodoList from "components/TodoList"
+import JokeGenerator from "components/JokeGenerator"
 
 import Home from "pages/Home"
 import Users from "pages/Users"
@@ -15,7 +16,8 @@ function App() {
     <>
       <GlobalStyles />
 
-      <TodoList />
+      {/* <TodoList /> */}
+      <JokeGenerator />
 
       {/* <Layout>
         <Routes>
