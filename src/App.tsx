@@ -1,11 +1,15 @@
 import GlobalStyles from "styles/GlobalStyles"
-import Layout from "components/Layout"
+// import Layout from "components/Layout"
 import { Route, Routes } from "react-router-dom"
-import TodoList from "components/TodoList"
-import JokeGenerator from "components/JokeGenerator"
+// import TodoList from "components/TodoList"
+// import JokeGenerator from "components/JokeGenerator"
 
-import Home from "pages/Home"
-import Users from "pages/Users"
+import Weather from "pages/Weather"
+import WeatherHome from "pages/Weather/components/WeatherHome"
+import Weathers from "pages/Weather/components/Weathers"
+
+// import Home from "pages/Home"
+// import Users from "pages/Users"
 
 // import Homework29 from "homeworks/Homework29";
 // import Homework31 from "homeworks/Homework31";
@@ -15,9 +19,16 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <Weather>
+        <Routes>
+          <Route path="/" element={<WeatherHome />} />
+          <Route path="/weathers" element={<Weathers />} />
+          <Route path="*" element="Page is not found" />
+        </Routes>
+      </Weather>
 
       {/* <TodoList /> */}
-      <JokeGenerator />
+      {/* <JokeGenerator /> */}
 
       {/* <Layout>
         <Routes>

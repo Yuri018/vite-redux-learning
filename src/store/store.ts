@@ -10,14 +10,17 @@ import{todoListReducers} from './redux/todoList/todoListSlice'
 
 import { jokeGeneratorReducers } from "./redux/jokeGenerator/jokeGeneratorSlice"
 
+import {weatherReducers} from './redux/weather/weatherSlice'
+
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
     feedback: feedbackReducer,
     users: usersReducers,
     todolist: todoListReducers,
-    jokeGenerator: jokeGeneratorReducers
-
+    jokeGenerator: jokeGeneratorReducers,
+    weather: weatherReducers
+    
   },
 })
 
